@@ -2,9 +2,9 @@ const express = require('express'); // Import modul Express.js
 const app = express(); // Inisialisasi aplikasi Express
 
 // const userreviews = require('./router/reviews'); // Import router untuk endpoint reviews
-const categoriesroutes = require('./category/category')
+const categoriesroutes = require('./routes/categories')
 
-const port = 3000; // Menentukan port yang akan digunakan oleh server
+const port = 5000; // Menentukan port yang akan digunakan oleh server
 
 // Middleware untuk parsing data dalam format JSON
 app.use(express.json()); 
@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 
 // Middleware untuk menggunakan router yang berisi endpoint terkait ulasan (reviews)
 // app.use(userreviews);
-app.use(categoriesroutes)
+app.use('/api',categoriesroutes)
 
 // Menjalankan server pada port yang telah ditentukan
 app.listen(port, () => {

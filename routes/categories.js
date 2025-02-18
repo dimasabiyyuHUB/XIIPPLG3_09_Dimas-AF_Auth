@@ -14,6 +14,8 @@ router.get( '/categories',(req, res) => {
   }),
 
   router.post('/categories', (req, res) => {
+    console.log(req.body);
+    
     const { name } = req.body;
 
     // Validasi input

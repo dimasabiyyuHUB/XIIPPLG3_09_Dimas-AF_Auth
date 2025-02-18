@@ -1,4 +1,4 @@
-const mysql = require("mysql2"); // Import modul MySQL untuk Node.js
+const mysql = require("mysql"); // Import modul MySQL untuk Node.js
 
 // Membuat koneksi ke database MySQL
 const db = mysql.createConnection({
