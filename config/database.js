@@ -6,7 +6,7 @@ const db = mysql.createConnection({
     user: "root",       // Nama pengguna MySQL (gantilah jika menggunakan user lain)
     password: "",       // Password MySQL (kosong jika tidak ada password)
     database: "library"    // Nama database yang digunakan
-});
+})
 
 // Menghubungkan ke database
 db.connect((err) => {

@@ -2,7 +2,7 @@ const express = require('express'); // Import modul Express.js
 const app = express(); // Inisialisasi aplikasi Express
 
 // const userreviews = require('./router/reviews'); // Import router untuk endpoint reviews
-const categoriesroutes = require('./routes/userRoutes')
+const categoriesroutes = require('./routes/bookrouter')
 
 const port = 3000; // Menentukan port yang akan digunakan oleh server
 
